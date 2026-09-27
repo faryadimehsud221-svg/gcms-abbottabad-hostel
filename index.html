@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#F1F6F8">
+    <meta name="description"
+        content="Apply for a safe, comfortable place to stay. Explore rooms and complete your hostel admission application online.">
+    <title>GCMS ABBOTTABAD HOSTEL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --ink: #123047;
+            --muted: #5d7180;
+            --paper: #f1f6f8;
+            --white: #ffffff;
+            --green: #137c8b;
+            --green-dark: #0c5966;
+            --lime: #bfe8e5;
+            --line: #d6e4e7;
+            --coral: #d66a4a;
+            --serif: Georgia, "Times New Roman", serif;
+            --sans: "DM Sans", sans-serif;
+            --display: "Manrope", sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: var(--paper);
+            color: var(--ink);
+            font-family: var(--sans);
+        }
+
+        a {
+            color: inherit;
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
+        }
+
+        button,
+        a {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .topline {
+            min-height: 38px;
+            padding: 9px 5vw;
+            display: flex;
+            justify-content: space-between;
+            gap: 18px;
+            align-items: center;
+            background: var(--ink);
+            color: #f1f6f8;
+            font-size: 12px;
+        }
+
+        .owner-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .topline a {
+            color: #f1f6f8;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .topline span {
+            opacity: .82;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .nav {
+            min-height: 76px;
+            padding: 0 5vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .brand {
+            display: flex;
+            gap: 11px;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .brand-mark {
+            width: 39px;
+            height: 39px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: var(--green);
+            color: white;
+            font-family: var(--serif);
+            font-size: 23px;
+        }
+
+        .brand-name {
+            font-family: var(--display);
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 0;
+        }
+
+        .brand-sub {
+            display: block;
+            margin-top: 2px;
+            color: var(--muted);
+            font-size: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 27px;
+        }
+
+        .nav-links a {
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: var(--green);
+        }
+
+        .nav-apply,
+        .button-primary {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 46px;
+            padding: 0 20px;
+            border: 0;
+            border-radius: 3px;
+            background: var(--green);
+            color: white !important;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background .2s, transform .2s;
+        }
+
+        .nav-apply:hover,
+        .button-primary:hover {
+            background: var(--green-dark);
+            transform: translateY(-1px);
+        }
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #e1f0f2;
+        }
+
+        .hero-copy {
+            z-index: 1;
+            width: 100%;
+            padding: 40px 5vw 16px;
+            text-align: center;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--green);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .eyebrow::before {
+            width: 22px;
+            height: 1px;
+            background: currentColor;
+            content: "";
+        }
+
+        h1 {
+            max-width: none;
+            margin: 17px 0 0;
+            font-family: var(--serif);
+            font-size: 82px;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: 1.06;
+        }
+
+        h1,
+        h2,
+        h3 {
+            text-transform: uppercase;
+        }
+
+        h1 em {
+            color: var(--green);
+            font-weight: 400;
+        }
+
+        .hero-copy p {
+            max-width: 440px;
+            margin: 0 auto;
+            color: #5d7180;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-top: 28px;
+        }
+
+        .text-link {
+            color: var(--ink);
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 4px;
+        }
+
+        .hero-art {
+            position: relative;
+            width: min(90vw, 760px);
+            height: auto;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            flex: 0 0 auto;
+            background: #b8d9d8;
+        }
+
+        .hero-art img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .hero-art .college-gate {
+            object-position: center;
+        }
+
+        .image-note {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            max-width: 220px;
+            padding: 12px 15px;
+            background: var(--white);
+            color: var(--ink);
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .hero-phone {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 58px;
+            margin: 20px auto 0;
+            padding: 0 28px;
+            border-radius: 3px;
+            background: var(--green);
+            color: white;
+            font-family: var(--display);
+            font-size: 25px;
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .hero-phone:hover {
+            background: var(--green-dark);
+        }
+
+        .hero-details {
+            width: 100%;
+            padding: 18px 5vw 42px;
+            text-align: center;
+        }
+
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 0 10vw;
+            background: var(--green);
+            color: white;
+        }
+
+        .highlight {
+            padding: 23px 20px;
+            border-right: 1px solid #ffffff33;
+            text-align: center;
+        }
+
+        .highlight:last-child {
+            border: 0;
+        }
+
+        .highlight strong {
+            display: block;
+            font-family: var(--serif);
+            font-size: 29px;
+            font-weight: 400;
+        }
+
+        .highlight span {
+            display: block;
+            margin-top: 4px;
+            color: #dce6d5;
+            font-size: 11px;
+        }
+
+        .section {
+            padding: 80px 10vw;
+        }
+
+        .section-heading {
+            max-width: 620px;
+            margin: 0 auto 38px;
+            text-align: center;
+        }
+
+        .section-heading h2 {
+            margin: 12px 0 9px;
+            font-family: var(--serif);
+            font-size: 54px;
+            font-weight: 400;
+            letter-spacing: 0;
+        }
+
+        .section-heading p {
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.75;
+        }
+
+        .process {
+            background: var(--white);
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+        }
+
+        .step {
+            position: relative;
+            padding: 4px 24px 8px;
+            border-left: 1px solid var(--line);
+        }
+
+        .step:first-child {
+            border-left: 0;
+        }
+
+        .step-no {
+            color: var(--coral);
+            font-family: var(--serif);
+            font-size: 28px;
+        }
+
+        .step h3 {
+            margin: 11px 0 8px;
+            font-family: var(--display);
+            font-size: 19px;
+        }
+
+        .step p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 12px;
+            line-height: 1.75;
+        }
+
+        .rooms {
+            background: #e7f1f4;
+        }
+
+        .room-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .room {
+            padding: 22px;
+            border-top: 2px solid var(--green);
+            background: var(--white);
+        }
+
+        .room h3 {
+            margin: 0 0 8px;
+            font-family: var(--display);
+            font-size: 20px;
+        }
+
+        .room p {
+            min-height: 41px;
+            margin: 0 0 16px;
+            color: var(--muted);
+            font-size: 12px;
+            line-height: 1.7;
+        }
+
+        .room strong {
+            color: var(--green);
+            font-size: 18px;
+        }
+
+        .room small {
+            color: var(--muted);
+            font-weight: 400;
+        }
+
+        .fees {
+            background: #e7f1f4;
+        }
+
+        .fee-list {
+            max-width: 800px;
+            margin: 0 auto;
+            border-top: 1px solid var(--line);
+        }
+
+        .fee-row {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            gap: 18px;
+            align-items: center;
+            padding: 16px 4px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .fee-row h3 {
+            margin: 0 0 4px;
+            font-family: var(--display);
+            font-size: 19px;
+        }
+
+        .fee-row p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 11px;
+            line-height: 1.55;
+        }
+
+        .fee-amount {
+            color: var(--green-dark);
+            font-size: 12px;
+            font-weight: 700;
+            text-align: right;
+        }
+
+        .fee-contact {
+            margin: 20px auto 0;
+            text-align: center;
+        }
+
+        .fee-contact a {
+            color: var(--green-dark);
+            font-size: 13px;
+            font-weight: 700;
+            text-underline-offset: 3px;
+        }
+
+        .food-menu {
+            background: var(--white);
+        }
+
+        .menu-table-wrap {
+            overflow-x: auto;
+            border: 1px solid var(--line);
+            background: var(--white);
+        }
+
+        .menu-table {
+            width: 100%;
+            min-width: 650px;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .menu-table th,
+        .menu-table td {
+            padding: 14px 17px;
+            border-bottom: 1px solid var(--line);
+            font-size: 12px;
+            line-height: 1.55;
+        }
+
+        .menu-table thead th {
+            background: var(--green);
+            color: white;
+            font-size: 11px;
+            letter-spacing: .5px;
+            text-transform: uppercase;
+        }
+
+        .menu-table tbody th {
+            width: 120px;
+            color: var(--green-dark);
+            font-family: var(--display);
+            font-size: 12px;
+        }
+
+        .menu-table tbody tr:last-child th,
+        .menu-table tbody tr:last-child td {
+            border-bottom: 0;
+        }
+
+        .menu-note {
+            margin: 12px 0 0;
+            color: var(--muted);
+            font-size: 11px;
+            line-height: 1.6;
+        }
+
+        .study-hours {
+            margin-top: 24px;
+            padding: 16px 20px;
+            border-left: 3px solid var(--coral);
+            background: var(--paper);
+        }
+
+        .study-hours h3 {
+            margin: 0 0 5px;
+            font-family: var(--display);
+            font-size: 16px;
+        }
+
+        .study-hours p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .admissions {
+            padding: 80px 6vw;
+            background: #eaf2f4;
+        }
+
+        .admissions-wrap {
+            max-width: 990px;
+            margin: auto;
+        }
+
+        .admissions .section-heading {
+            margin-bottom: 30px;
+        }
+
+        .form-shell {
+            display: grid;
+            grid-template-columns: 265px minmax(0, 1fr);
+            border: 1px solid var(--line);
+            background: var(--white);
+        }
+
+        .form-aside {
+            padding: 30px 23px;
+            background: var(--green-dark);
+            color: white;
+        }
+
+        .form-aside h3 {
+            margin: 0 0 9px;
+            font-family: var(--serif);
+            font-size: 29px;
+            font-weight: 400;
+        }
+
+        .form-aside>p {
+            margin: 0 0 25px;
+            color: #d2e4e7;
+            font-size: 12px;
+            line-height: 1.7;
+        }
+
+        .progress-step {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            margin: 18px 0;
+            color: #b9d1d7;
+            font-size: 12px;
+        }
+
+        .progress-step span {
+            width: 26px;
+            height: 26px;
+            flex: 0 0 26px;
+            display: grid;
+            place-items: center;
+            border: 1px solid #739aa4;
+            border-radius: 50%;
+            font-size: 11px;
+        }
+
+        .progress-step.active {
+            color: white;
+            font-weight: 700;
+        }
+
+        .progress-step.active span,
+        .progress-step.done span {
+            border-color: var(--lime);
+            background: var(--lime);
+            color: var(--ink);
+        }
+
+        .aside-note {
+            margin-top: 35px;
+            padding-top: 18px;
+            border-top: 1px solid #ffffff35;
+            color: #d2e4e7;
+            font-size: 11px;
+            line-height: 1.7;
+        }
+
+        .form-main {
+            min-width: 0;
+            padding: 30px clamp(18px, 4vw, 42px);
+        }
+
+        .form-main h3 {
+            margin: 0 0 5px;
+            font-family: var(--display);
+            font-size: 23px;
+        }
+
+        .form-hint {
+            margin: 0 0 23px;
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        .form-step[hidden] {
+            display: none;
+        }
+
+        .fields {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 15px;
+        }
+
+        .field {
+            min-width: 0;
+        }
+
+        .field.full {
+            grid-column: 1 / -1;
+        }
+
+        .field label,
+        .field-label {
+            display: block;
+            margin-bottom: 6px;
+            color: #123047;
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .required {
+            color: var(--coral);
+        }
+
+        .field input,
+        .field select,
+        .field textarea {
+            width: 100%;
+            min-height: 43px;
+            padding: 10px 11px;
+            border: 1px solid #d6e4e7;
+            border-radius: 2px;
+            outline: none;
+            background: white;
+            color: var(--ink);
+            font-size: 12px;
+        }
+
+        .field textarea {
+            min-height: 86px;
+            resize: vertical;
+        }
+
+        .field input:focus,
+        .field select:focus,
+        .field textarea:focus {
+            border-color: var(--green);
+            box-shadow: 0 0 0 2px #137c8b1b;
+        }
+
+        .field input[type="file"] {
+            padding: 8px;
+        }
+
+        .field small {
+            display: block;
+            margin-top: 5px;
+            color: var(--muted);
+            font-size: 10px;
+            line-height: 1.5;
+        }
+
+        .radio-row {
+            display: flex;
+            gap: 16px;
+            min-height: 43px;
+            align-items: center;
+        }
+
+        .radio-row label,
+        .checkline {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            margin: 0;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        .radio-row input,
+        .checkline input {
+            width: 15px;
+            height: 15px;
+            min-height: 0;
+            margin: 1px 0 0;
+            accent-color: var(--green);
+        }
+
+        .form-error {
+            min-height: 18px;
+            margin: 11px 0 0;
+            color: #a63d2c;
+            font-size: 11px;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            margin-top: 18px;
+            padding-top: 18px;
+            border-top: 1px solid var(--line);
+        }
+
+        .button-secondary {
+            min-height: 44px;
+            padding: 0 16px;
+            border: 1px solid var(--line);
+            border-radius: 3px;
+            background: transparent;
+            color: var(--ink);
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .button-secondary:hover {
+            background: var(--paper);
+        }
+
+        a .review-box {
+            padding: 14px;
+            border: 1px solid var(--line);
+            background: #f1f6f8;
+            font-size: 12px;
+            line-height: 1.8;
+            white-space: pre-line;
+        }
+
+        .email-note {
+            margin-top: 12px;
+            color: var(--muted);
+            font-size: 11px;
+            line-height: 1.6;
+        }
+
+        .success {
+            padding: 25px 0;
+            text-align: center;
+        }
+
+        .success-icon {
+            width: 48px;
+            height: 48px;
+            display: grid;
+            place-items: center;
+            margin: 0 auto 14px;
+            border-radius: 50%;
+            background: var(--lime);
+            color: var(--green-dark);
+            font-size: 24px;
+        }
+
+        .success h3 {
+            font-family: var(--serif);
+            font-size: 35px;
+            font-weight: 400;
+        }
+
+        .success p {
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .submission-panel {
+            margin: 0 auto 48px;
+            padding: 24px 5vw 0;
+            max-width: 1200px;
+        }
+
+        .submission-box {
+            border: 1px solid var(--line);
+            background: #fbfdfd;
+            padding: 24px;
+        }
+
+        .submission-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 18px;
+            flex-wrap: wrap;
+        }
+
+        .submission-header h3 {
+            margin: 0;
+            font-size: 24px;
+            font-family: var(--serif);
+            font-weight: 400;
+        }
+
+        .submission-actions {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .summary-pill {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 30px;
+            padding: 0 12px;
+            border-radius: 999px;
+            background: #e5f3f2;
+            color: var(--green-dark);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+        }
+
+        .submission-list {
+            display: grid;
+            gap: 12px;
+        }
+
+        .submission-item {
+            padding: 14px 16px;
+            border: 1px solid var(--line);
+            background: #f5f9fa;
+        }
+
+        .submission-item strong {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        .submission-item small {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--muted);
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: .07em;
+        }
+
+        .submission-item p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 12px;
+            line-height: 1.7;
+            white-space: pre-line;
+        }
+
+        .empty-state {
+            margin: 0;
+            padding: 18px;
+            border: 1px dashed var(--line);
+            background: #f5f9fa;
+            color: var(--muted);
+            font-size: 12px;
+            line-height: 1.7;
+        }
+
+        .contact {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 20px;
+            align-items: center;
+            padding: 31px 10vw;
+            background: var(--lime);
+        }
+
+        .contact h2 {
+            margin: 0 0 5px;
+            font-family: var(--serif);
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+        .contact p {
+            margin: 0;
+            color: #426672;
+            font-size: 12px;
+        }
+
+        .contact a {
+            color: var(--green-dark);
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px 5vw;
+            background: var(--ink);
+            color: #e7f0f2;
+            font-size: 11px;
+        }
+
+        footer a {
+            color: #e7f0f2;
+        }
+
+        .reveal {
+            animation: rise-in .65s both;
+        }
+
+        @keyframes rise-in {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 760px) {
+            .topline {
+                gap: 8px;
+                padding-right: 5vw;
+                padding-left: 5vw;
+                font-size: 10px;
+            }
+
+            .nav {
+                min-height: 67px;
+            }
+
+            .nav-links {
+                gap: 14px;
+            }
+
+            .nav-links a:not(.nav-apply) {
+                display: none;
+            }
+
+            .nav-apply {
+                min-height: 40px;
+                padding: 0 13px;
+                font-size: 12px;
+            }
+
+            .hero-copy {
+                padding: 36px 5vw 16px;
+            }
+
+            .hero-art {
+                width: min(88vw, 640px);
+                height: auto;
+                aspect-ratio: 4 / 3;
+            }
+
+            h1 {
+                font-size: 58px;
+            }
+
+            .hero-phone {
+                min-height: 52px;
+                font-size: 22px;
+            }
+
+            .highlights {
+                padding: 0 4vw;
+            }
+
+            .highlight {
+                padding: 18px 8px;
+            }
+
+            .highlight strong {
+                font-size: 22px;
+            }
+
+            .highlight span {
+                font-size: 10px;
+            }
+
+            .section {
+                padding: 58px 7vw;
+            }
+
+            .steps {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px 0;
+            }
+
+            .step:nth-child(3) {
+                border-left: 0;
+            }
+
+            .room-list {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .room p {
+                min-height: 0;
+            }
+
+            .admissions {
+                padding: 58px 5vw;
+            }
+
+            .form-shell {
+                grid-template-columns: 1fr;
+            }
+
+            .form-aside {
+                padding: 21px;
+            }
+
+            .form-aside>p,
+            .aside-note {
+                display: none;
+            }
+
+            .form-aside h3 {
+                margin-bottom: 14px;
+            }
+
+            .progress-step {
+                display: inline-flex;
+                margin: 0 8px 0 0;
+                font-size: 0;
+            }
+
+            .progress-step span {
+                width: 29px;
+                height: 29px;
+                flex-basis: 29px;
+                font-size: 11px;
+            }
+
+            .contact {
+                grid-template-columns: 1fr;
+                padding: 26px 7vw;
+            }
+        }
+
+        @media (max-width: 430px) {
+            .brand-name {
+                font-size: 13px;
+            }
+
+            .brand-mark {
+                width: 34px;
+                height: 34px;
+            }
+
+            h1 {
+                font-size: 43px;
+            }
+
+            .hero-art {
+                width: 88vw;
+            }
+
+            .fields {
+                grid-template-columns: 1fr;
+            }
+
+            .field.full {
+                grid-column: auto;
+            }
+
+            .section-heading h2 {
+                font-size: 40px;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                animation-duration: .01ms !important;
+                transition-duration: .01ms !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topline">
+        <div class="owner-info">
+            <span>ISHFAQ PATHAN | HOSTEL OWNER</span>
+        </div>
+    </div>
+    <header class="nav">
+        <a class="brand" href="#home" aria-label="GCMS ABBOTTABAD HOSTEL home">
+            <span class="brand-mark" aria-hidden="true">د</span>
+            <span><span class="brand-name">GCMS ABBOTTABAD HOSTEL</span><span class="brand-sub">Student
+                    residence</span></span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="#process">How it works</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#fees">Fees</a>
+            <a href="#food">Food menu</a>
+            <a href="#contact">Contact</a>
+            <a class="nav-apply" href="#apply">Apply for a room</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-copy reveal">
+                <span class="eyebrow">Admissions now open</span>
+                <h1>GCMS ABBOTTABAD<br><em>HOSTEL</em></h1>
+            </div>
+            <div class="hero-art" aria-label="Main entrance gate of GCMS Abbottabad college">
+                <img class="college-gate" src="file.jpe" alt="Main entrance gate of GCMS Abbottabad college"
+                    fetchpriority="high">
+                <div class="image-note">GCMS ABBOTTABAD · COLLEGE GATE</div>
+            </div>
+            <a class="hero-phone" href="tel:+923028520427" aria-label="Call hostel owner at 03028520427">03028520427</a>
+            <div class="hero-details">
+                <p>Find your feet, focus on your studies, and feel at home. Start your hostel application online in a
+                    few straightforward steps.</p>
+                <div class="hero-actions">
+                    <a class="button-primary" href="#apply">Start your application</a>
+                    <a class="text-link" href="#process">See the admission process</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlights" aria-label="Hostel highlights">
+            <div class="highlight"><strong>Safe, 24/7</strong><span>On-site support and secure entry</span></div>
+            <div class="highlight"><strong>Made for study</strong><span>Quiet hours and study spaces</span></div>
+            <div class="highlight"><strong>Move-in ready</strong><span>Furnished rooms and shared facilities</span>
+            </div>
+        </section>
+
+        <section class="section process" id="process">
+            <div class="section-heading">
+                <span class="eyebrow">A clear path to move-in</span>
+                <h2>Four simple steps</h2>
+                <p>Know what to expect from your first application to your first day with us.</p>
+            </div>
+            <div class="steps">
+                <article class="step"><span class="step-no">01</span>
+                    <h3>Apply online</h3>
+                    <p>Share your details, study information and room preference in the form below.</p>
+                </article>
+                <article class="step"><span class="step-no">02</span>
+                    <h3>Send your documents</h3>
+                    <p>Prepare a photo, student ID or admission proof, and guardian contact details.</p>
+                </article>
+                <article class="step"><span class="step-no">03</span>
+                    <h3>Confirm your place</h3>
+                    <p>Our admissions team will contact you about availability, a visit and the fee schedule.</p>
+                </article>
+                <article class="step"><span class="step-no">04</span>
+                    <h3>Complete move-in</h3>
+                    <p>Review the hostel rules, finish registration and arrange your arrival date.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section rooms" id="rooms">
+            <div class="section-heading">
+                <span class="eyebrow">Choose what suits you</span>
+                <h2>Your room, your routine</h2>
+                <p>Tell us what you prefer in your application. Room availability and final fees are confirmed by
+                    admissions.</p>
+            </div>
+            <div class="room-list">
+                <article class="room">
+                    <h3>Shared room</h3>
+                    <p>A sociable, budget-friendly option with a shared study area.</p><strong>Ask for current
+                        fees</strong>
+                </article>
+                <article class="room">
+                    <h3>Twin room</h3>
+                    <p>A little more personal space, shared with one roommate.</p><strong>Ask for current fees</strong>
+                </article>
+                <article class="room">
+                    <h3>Private room</h3>
+                    <p>A quieter room for independent study and downtime.</p><strong>Ask for current fees</strong>
+                </article>
+            </div>
+        </section>
+
+        <section class="section fees" id="fees">
+            <div class="section-heading">
+                <span class="eyebrow">Plan your stay</span>
+                <h2>Fee details</h2>
+                <p>Ask for the current fee schedule before confirming admission. The total depends on room choice and
+                    meal plan.</p>
+            </div>
+            <div class="fee-list">
+                <article class="fee-row">
+                    <div>
+                        <h3>Admission &amp; registration</h3>
+                        <p>One-time registration charge when your place is confirmed.</p>
+                    </div>
+                    <span class="fee-amount">Confirm with management</span>
+                </article>
+                <article class="fee-row">
+                    <div>
+                        <h3>Room charges</h3>
+                        <p>Rates vary for shared, twin and private room options.</p>
+                    </div>
+                    <span class="fee-amount">Confirm with management</span>
+                </article>
+                <article class="fee-row">
+                    <div>
+                        <h3>Meals</h3>
+                        <p>Ask which meals are included and whether a meal plan is optional.</p>
+                    </div>
+                    <span class="fee-amount">Confirm with management</span>
+                </article>
+                <article class="fee-row">
+                    <div>
+                        <h3>Security deposit</h3>
+                        <p>Ask about the deposit amount, refund conditions and payment date.</p>
+                    </div>
+                    <span class="fee-amount">Confirm with management</span>
+                </article>
+                <article class="fee-row">
+                    <div>
+                        <h3>Utilities &amp; other charges</h3>
+                        <p>Confirm whether electricity, laundry or other services cost extra.</p>
+                    </div>
+                    <span class="fee-amount">Confirm with management</span>
+                </article>
+            </div>
+            <p class="fee-contact"><a href="tel:+923028520427">Call hostel owner for the full fee schedule:
+                    03028520427</a></p>
+        </section>
+
+        <section class="section food-menu" id="food">
+            <div class="section-heading">
+                <span class="eyebrow">Fresh meals, every day</span>
+                <h2>Weekly food menu</h2>
+                <p>A sample Pakistani-style menu for residents. Ask the hostel team about the current menu and meal
+                    timings.</p>
+            </div>
+            <div class="menu-table-wrap" role="region" aria-label="Weekly hostel food menu" tabindex="0">
+                <table class="menu-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Day</th>
+                            <th scope="col">Breakfast</th>
+                            <th scope="col">Lunch</th>
+                            <th scope="col">Dinner</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Monday</th>
+                            <td>Paratha, omelette &amp; tea</td>
+                            <td>Daal chawal &amp; salad</td>
+                            <td>Chicken curry &amp; roti</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Tuesday</th>
+                            <td>Chana, roti &amp; tea</td>
+                            <td>Vegetable pulao &amp; raita</td>
+                            <td>Beef keema &amp; roti</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wednesday</th>
+                            <td>Anda paratha &amp; tea</td>
+                            <td>Chicken biryani &amp; raita</td>
+                            <td>Mixed vegetables &amp; roti</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Thursday</th>
+                            <td>Toast, egg &amp; tea</td>
+                            <td>Rajma chawal &amp; salad</td>
+                            <td>Chicken karahi &amp; roti</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Friday</th>
+                            <td>Halwa puri &amp; chana</td>
+                            <td>Daal chawal &amp; salad</td>
+                            <td>Seasonal vegetables &amp; roti</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Saturday</th>
+                            <td>Paratha, omelette &amp; tea</td>
+                            <td>Chicken pulao &amp; raita</td>
+                            <td>Chana masala &amp; roti</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sunday</th>
+                            <td>Aloo paratha &amp; tea</td>
+                            <td>Seasonal curry &amp; roti</td>
+                            <td>Yakhni pulao &amp; salad</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="menu-note">Sample menu only. Dishes may change with seasonal availability. Please contact the
+                hostel about allergies or special dietary requirements.</p>
+            <div class="study-hours">
+                <h3>Night study hours</h3>
+                <p>Quiet study time: 8:00 PM - 10:00 PM</p>
+            </div>
+        </section>
+
+        <section class="admissions" id="apply">
+            <div class="admissions-wrap">
+                <div class="section-heading">
+                    <span class="eyebrow">Begin here</span>
+                    <h2>Hostel admission form</h2>
+                    <p>Complete the three steps. Required fields are marked with an asterisk.</p>
+                </div>
+                <div class="form-shell">
+                    <aside class="form-aside" aria-label="Application progress">
+                        <h3>Your application</h3>
+                        <p>It takes about five minutes to complete. Have your student and guardian details ready.</p>
+                        <div class="progress-step active" data-progress="0"><span>1</span> Your details</div>
+                        <div class="progress-step" data-progress="1"><span>2</span> Stay &amp; guardian</div>
+                        <div class="progress-step" data-progress="2"><span>3</span> Review &amp; send</div>
+                        <div class="aside-note">Your information is prepared in an email for the hostel admissions team.
+                            Check your details before sending.</div>
+                    </aside>
+                    <div class="form-main">
+                        <form id="admission-form" novalidate>
+                            <section class="form-step" data-step="0" aria-labelledby="step-one-title">
+                                <h3 id="step-one-title">Tell us about yourself</h3>
+                                <p class="form-hint">Your personal and education details.</p>
+                                <div class="fields">
+                                    <div class="field"><label for="full-name">Full name <span
+                                                class="required">*</span></label><input id="full-name" name="Full name"
+                                            autocomplete="name" required></div>
+                                    <div class="field"><label for="email">Email address <span
+                                                class="required">*</span></label><input id="email"
+                                            name="Applicant email" type="email" autocomplete="email" required></div>
+                                    <div class="field"><label for="phone">Phone / WhatsApp <span
+                                                class="required">*</span></label><input id="phone"
+                                            name="Phone / WhatsApp" type="tel" autocomplete="tel" required></div>
+                                    <div class="field"><label for="birth-date">Date of birth <span
+                                                class="required">*</span></label><input id="birth-date"
+                                            name="Date of birth" type="date" required></div>
+                                    <div class="field"><label for="institution">School / university <span
+                                                class="required">*</span></label><input id="institution"
+                                            name="School / university" required></div>
+                                    <div class="field"><label for="course">Course / class <span
+                                                class="required">*</span></label><input id="course"
+                                            name="Course / class" required></div>
+                                </div>
+                            </section>
+                            <section class="form-step" data-step="1" aria-labelledby="step-two-title" hidden>
+                                <h3 id="step-two-title">Plan your stay</h3>
+                                <p class="form-hint">Room preferences and an emergency contact.</p>
+                                <div class="fields">
+                                    <div class="field"><label for="move-in">Preferred move-in date <span
+                                                class="required">*</span></label><input id="move-in"
+                                            name="Preferred move-in date" type="date" required></div>
+                                    <div class="field"><label for="duration">Length of stay <span
+                                                class="required">*</span></label><select id="duration"
+                                            name="Length of stay" required>
+                                            <option value="">Select a duration</option>
+                                            <option>One semester</option>
+                                            <option>One academic year</option>
+                                            <option>More than one year</option>
+                                            <option>Not decided yet</option>
+                                        </select></div>
+                                    <div class="field"><span class="field-label">Room preference <span
+                                                class="required">*</span></span>
+                                        <div class="radio-row"><label><input type="radio" name="Room preference"
+                                                    value="Shared room" required> Shared</label><label><input
+                                                    type="radio" name="Room preference" value="Twin room">
+                                                Twin</label><label><input type="radio" name="Room preference"
+                                                    value="Private room"> Private</label></div>
+                                    </div>
+                                    <div class="field"><label for="guardian-name">Parent / guardian name <span
+                                                class="required">*</span></label><input id="guardian-name"
+                                            name="Parent / guardian name" required></div>
+                                    <div class="field"><label for="guardian-phone">Guardian phone <span
+                                                class="required">*</span></label><input id="guardian-phone"
+                                            name="Guardian phone" type="tel" required></div>
+                                    <div class="field"><label for="emergency-phone">Alternate emergency
+                                            phone</label><input id="emergency-phone" name="Alternate emergency phone"
+                                            type="tel"></div>
+                                    <div class="field full"><label for="notes">Anything we should know?</label><textarea
+                                            id="notes" name="Additional notes"
+                                            placeholder="Accessibility needs, questions or other important information"></textarea>
+                                    </div>
+                                    <div class="field full"><label for="documents">Documents (optional at this
+                                            stage)</label><input id="documents" type="file" accept="image/*,.pdf"
+                                            multiple><small>Choose a photo, student ID or admission letter. Files are
+                                            not attached to the email draft; our team will tell you how to send them
+                                            securely.</small></div>
+                                </div>
+                            </section>
+                            <section class="form-step" data-step="2" aria-labelledby="step-three-title" hidden>
+                                <h3 id="step-three-title">Review before sending</h3>
+                                <p class="form-hint">Check your application details, then prepare an email to
+                                    admissions.</p>
+                                <div class="review-box" id="review-box" aria-live="polite"></div>
+                                <p class="email-note">Selecting “Prepare email” opens your email app with these details
+                                    addressed to <strong>ishfaqmsd229@gmail.com</strong>. You must press Send in your
+                                    email app to submit your application.</p>
+                                <div class="field full" style="margin-top:16px"><label class="checkline"><input
+                                            id="consent" type="checkbox" required><span>I confirm these details are
+                                            accurate and agree to be contacted about my hostel application. <span
+                                                class="required">*</span></span></label></div>
+                            </section>
+                            <p class="form-error" id="form-error" role="alert" aria-live="polite"></p>
+                            <div class="form-actions" id="form-actions">
+                                <button class="button-secondary" type="button" id="back-button" hidden>Back</button>
+                                <span id="action-spacer"></span>
+                                <button class="button-primary" type="button" id="next-button">Continue</button>
+                            </div>
+                            <div id="success-message" class="success" hidden role="status">
+                                <div class="success-icon" aria-hidden="true">✓</div>
+                                <h3>Email draft ready</h3>
+                                <p>Your application details are in your email app. Send the message there to complete
+                                    your application. If it did not open, contact admissions directly.</p>
+                                <a class="text-link" href="mailto:ishfaqmsd229@gmail.com">Email admissions</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="submission-panel" aria-label="Saved applications overview">
+            <div class="submission-box">
+                <div class="submission-header">
+                    <h3>Admissions dashboard</h3>
+                    <div class="submission-actions">
+                        <span class="summary-pill" id="summary-count">0 saved applications</span>
+                        <button class="button-secondary" type="button" id="download-applications">Export JSON</button>
+                    </div>
+                </div>
+                <div class="submission-list" id="applications-list"></div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div>
+                <h2>Questions before you apply?</h2>
+                <p>Get in touch with our admissions team about rooms, fees or the move-in process.</p>
+            </div>
+            <a href="mailto:ishfaqmsd229@gmail.com">ishfaqmsd229@gmail.com</a>
+        </section>
+    </main>
+    <footer><span>© <span id="year"></span> GCMS ABBOTTABAD HOSTEL Student Residence</span><a
+            href="mailto:ishfaqmsd229@gmail.com">Admissions support</a></footer>
+
+    <script>
+        const ADMISSIONS_EMAIL = "ishfaqmsd229@gmail.com";
+        const STORAGE_KEY = "pathanHostelApplications";
+        const form = document.querySelector("#admission-form");
+        const steps = [...document.querySelectorAll(".form-step")];
+        const progressSteps = [...document.querySelectorAll(".progress-step")];
+        const backButton = document.querySelector("#back-button");
+        const nextButton = document.querySelector("#next-button");
+        const errorMessage = document.querySelector("#form-error");
+        const reviewBox = document.querySelector("#review-box");
+        const consent = document.querySelector("#consent");
+        const applicationsList = document.querySelector("#applications-list");
+        const summaryCount = document.querySelector("#summary-count");
+        const downloadButton = document.querySelector("#download-applications");
+        let currentStep = 0;
+
+        document.querySelector("#year").textContent = new Date().getFullYear();
+
+        function getSavedApplications() {
+            try {
+                const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+                return Array.isArray(saved) ? saved : [];
+            } catch (error) {
+                console.warn("Saved application data could not be read.", error);
+                return [];
+            }
+        }
+
+        function saveApplications(applications) {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(applications));
+        }
+
+        function renderApplications() {
+            const applications = getSavedApplications();
+            const countText = `${applications.length} saved application${applications.length === 1 ? "" : "s"}`;
+            summaryCount.textContent = countText;
+
+            if (!applications.length) {
+                applicationsList.innerHTML = '<p class="empty-state">No applications have been saved yet. Complete the form and prepare the email to store the first submission.</p>';
+                return;
+            }
+
+            applicationsList.innerHTML = applications.map((application, index) => {
+                const label = application["Full name"] || `Applicant ${index + 1}`;
+                const submittedAt = application.submittedAt ? new Date(application.submittedAt).toLocaleString() : "Not available";
+                const details = Object.entries(application)
+                    .filter(([key]) => key !== "submittedAt")
+                    .map(([key, value]) => `${key}: ${value}`)
+                    .join("\n");
+
+                return `
+                    <article class="submission-item">
+                        <small>${submittedAt}</small>
+                        <strong>${label}</strong>
+                        <p>${details.replace(/\n/g, "<br>")}</p>
+                    </article>
+                `;
+            }).join("");
+        }
+
+        function collectFormData() {
+            const data = {};
+            for (const field of form.querySelectorAll("input[name], select[name], textarea[name]")) {
+                if (field.type === "radio" && !field.checked) continue;
+                if (field.type === "file") continue;
+                if (field.type === "checkbox") {
+                    data[field.name] = field.checked;
+                    continue;
+                }
+                const value = field.value.trim();
+                if (value) data[field.name] = value;
+            }
+            return data;
+        }
+
+        function saveCurrentApplication() {
+            const data = collectFormData();
+            const applications = getSavedApplications();
+            data.submittedAt = new Date().toISOString();
+            applications.unshift(data);
+            saveApplications(applications);
+            renderApplications();
+        }
+
+        function exportApplications() {
+            const applications = getSavedApplications();
+            const json = JSON.stringify(applications, null, 2);
+            const blob = new Blob([json], { type: "application/json" });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement("a");
+            link.href = url;
+            link.download = "hostel-applications.json";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+
+        function showStep(step) {
+            currentStep = step;
+            steps.forEach((section, index) => { section.hidden = index !== step; });
+            progressSteps.forEach((item, index) => {
+                item.classList.toggle("active", index === step);
+                item.classList.toggle("done", index < step);
+            });
+            backButton.hidden = step === 0;
+            nextButton.textContent = step === steps.length - 1 ? "Prepare email" : "Continue";
+            errorMessage.textContent = "";
+        }
+
+        function validateStep() {
+            const currentFields = [...steps[currentStep].querySelectorAll("input, select, textarea")];
+            for (const field of currentFields) {
+                if (field.type === "file" || field.type === "checkbox") continue;
+                if (!field.checkValidity()) {
+                    field.reportValidity();
+                    return false;
+                }
+            }
+            if (currentStep === 2 && !consent.checked) {
+                errorMessage.textContent = "Please confirm your details before preparing the email.";
+                consent.focus();
+                return false;
+            }
+            return true;
+        }
+
+        function updateReview() {
+            const lines = [];
+            for (const field of form.querySelectorAll("input[name], select[name], textarea[name]")) {
+                if (field.type === "radio" && !field.checked) continue;
+                const value = field.value.trim();
+                if (value) lines.push(`${field.name}: ${value}`);
+            }
+            reviewBox.textContent = lines.join("\n");
+        }
+
+        function prepareEmail() {
+            const fullNameField = form.elements.namedItem("Full name");
+            const fullName = (fullNameField ? fullNameField.value.trim() : "Applicant");
+            const subject = `Hostel admission application - ${fullName}`;
+            const body = [
+                "HOSTEL ADMISSION APPLICATION",
+                "",
+                ...[...form.querySelectorAll("input[name], select[name], textarea[name]")]
+                    .filter((field) => field.type !== "radio" || field.checked)
+                    .filter((field) => field.value.trim())
+                    .map((field) => `${field.name}: ${field.value.trim()}`),
+                "",
+                "I confirm these details are accurate and agree to be contacted about my hostel application."
+            ].join("\n");
+            const mailto = `mailto:${ADMISSIONS_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            saveCurrentApplication();
+            window.location.href = mailto;
+            document.querySelector("#form-actions").hidden = true;
+            document.querySelector("#success-message").hidden = false;
+        }
+
+        nextButton.addEventListener("click", () => {
+            if (!validateStep()) return;
+            if (currentStep < steps.length - 1) {
+                const nextStep = currentStep + 1;
+                if (nextStep === 2) updateReview();
+                showStep(nextStep);
+            } else {
+                prepareEmail();
+            }
+        });
+
+        backButton.addEventListener("click", () => showStep(currentStep - 1));
+        downloadButton.addEventListener("click", exportApplications);
+        form.addEventListener("submit", (event) => event.preventDefault());
+        showStep(0);
+        renderApplications();
+    </script>
+</body>
+
+</html>
